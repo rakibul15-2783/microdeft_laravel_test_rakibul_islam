@@ -81,13 +81,13 @@
 									<div class="row mb-3">
 										<label for="date-of-birth" class="col-sm-3 col-form-label">date-of-birth</label>
 										<div class="col-sm-9">
-											<input type="text" name="date-of-birth" class="student-date-of-birth form-control" id="student-date-of-birth" placeholder="Quantity">
+											<input type="text" name="date-of-birth" class="student-date-of-birth form-control" id="student-date-of-birth" placeholder="">
 										</div>
 									</div>
 									<div class="row mb-3">
 										<label for="department_id" class="col-sm-3 col-form-label">department_id</label>
 										<div class="col-sm-9">
-											<input type="text" name="department_id" class="student-department_id form-control" id="student-department_id" placeholder="Quantity">
+											<input type="text" name="department_id" class="student-department_id form-control" id="student-department_id" placeholder="">
 										</div>
 									</div>
 									<div class="row mb-3">
