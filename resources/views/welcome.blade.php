@@ -62,7 +62,7 @@
 										<h5 class="mb-0 text-info">Add student</h5>
 									</div>
 									<hr/>
-                                    <form action="" method="POST" enctype="multipart/form-data">
+                                    <form action="{{ route('store') }}" method="POST" enctype="multipart/form-data">
                                        @csrf
                                         
 									<div class="row mb-3">
@@ -70,6 +70,9 @@
 										<div class="col-sm-9">
 											<input type="text" name="name" class="student-name form-control" id="student-name" placeholder="Enter student Name">
 										</div>
+                                        @error("name")
+                                                    <span class="text-danger">{{ $message }}</span>
+                                        @enderror
 									</div>
 									
 									<div class="row mb-3">
@@ -77,24 +80,36 @@
 										<div class="col-sm-9">
 											<input type="text" name="class" class="student-class form-control" id="student-class" placeholder="Class">
 										</div>
+                                        @error("class")
+                                                    <span class="text-danger">{{ $message }}</span>
+                                        @enderror
 									</div>
 									<div class="row mb-3">
 										<label for="date-of-birth" class="col-sm-3 col-form-label">date-of-birth</label>
 										<div class="col-sm-9">
 											<input type="text" name="date-of-birth" class="student-date-of-birth form-control" id="student-date-of-birth" placeholder="">
 										</div>
+                                        @error("date-of-birth")
+                                                    <span class="text-danger">{{ $message }}</span>
+                                        @enderror
 									</div>
 									<div class="row mb-3">
 										<label for="department_id" class="col-sm-3 col-form-label">department_id</label>
 										<div class="col-sm-9">
 											<input type="text" name="department_id" class="student-department_id form-control" id="student-department_id" placeholder="">
 										</div>
-									</div>
+                                        @error("department_id")
+                                                    <span class="text-danger">{{ $message }}</span>
+                                        @enderror
+									</div> 
 									<div class="row mb-3">
 										<label for="image" class="col-sm-3 col-form-label">Images</label>
 										<div class="col-sm-9">
 											<input type="file" name="images" class="form-control" id="image">
 										</div>
+                                        @error("image")
+                                                    <span class="text-danger">{{ $message }}</span>
+                                        @enderror
 									</div>
 									
 									

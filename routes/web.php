@@ -17,3 +17,4 @@ use App\Http\Controllers\StudentController;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::post('/store',[StudentController::class,'store'])->name('store');
